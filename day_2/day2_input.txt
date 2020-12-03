@@ -1,4 +1,4 @@
-input = """1-4 n: nnnnn
+1-4 n: nnnnn
 5-7 z: qhcgzzz
 7-11 m: mmmmmmsmmmmm
 5-8 d: ldddtdgnzddddwl
@@ -997,16 +997,4 @@ input = """1-4 n: nnnnn
 11-13 m: mmmmvmbmmmmmmmmmmmqm
 10-11 g: blpbhgjcgmgg
 9-11 d: dddpddsnzdkqpdddk
-4-9 f: xfcfthqzw"""
-listput = input.split("\n")
-count = 0
-for x in listput:
-    split2 = x.split(" ")
-    lett = split2[1][0]
-    numsplit = split2[2].count(lett)
-    indexdash = x.index("-")
-    num1 = int(split2[0][0:indexdash])
-    num2 = int(split2[0][indexdash+1:])
-    if numsplit >= num1 and numsplit <= num2:
-        count+=1
-print(count)
+4-9 f: xfcfthqzw
