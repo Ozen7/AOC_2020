@@ -1,4 +1,4 @@
-with open("day_3/input3.txt","r") as input3:
+input4[count+4:count+13]
     fixedinput = input3.read().split("\n")
 fixedinput.remove("")
 axis = 0
